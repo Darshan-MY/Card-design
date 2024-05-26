@@ -4,112 +4,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>exercise 5</title>
+    <title>card design</title>
+    <style>
+        body {
+            background-color: grey;
+        }
+
+        .main {
+            height: 458px;
+            width: 345px;
+            border: 2px solid rgb(228, 228, 228);
+            position: static;
+            background-color: rgb(237, 237, 237);
+        }
+
+        .sub {
+            height: 426px;
+            width: 269px;
+            border: 2px solid rgb(228, 228, 228);
+            border-radius: 12px;
+            background-color: rgb(255, 255, 255);
+            position: absolute;
+            top: 25px;
+            left: 45px;
+        }
+
+        .sub2 img {
+            border: 2px white;
+            border-radius: 10px;
+            position: absolute;
+            /* height: 193px; */
+            height: 171px;
+            left: 8px;
+            top: 10px;
+        }
+
+        .button {
+            position: absolute;
+            top: 200px;
+            left: 10px;
+        }
+
+        #id1 {
+            background-color: rgb(255, 255, 255);
+            border: 2px solid black;
+            border-radius: 10px;
+            border-color: rgb(228, 228, 228);
+            color: black;
+            text-decoration: none;
+            padding: 2px;
+            margin: 5px;
+            padding: 2px 10px;
+        }
+
+        #id2 {
+            background-color: rgb(255, 255, 255);
+            border: 2px solid black;
+
+            border-radius: 10px;
+            border-color: rgb(228, 228, 228);
+            color: black;
+            text-decoration: none;
+            padding: 2px;
+            margin: 8px;
+            padding: 2px 10px;
+        }
+
+        .head {
+            position: absolute;
+            top: 210px;
+            left: 15px;
+
+        }
+
+        .para {
+            position: absolute;
+            top: 245px;
+            left: 06px;
+            padding: 10px;
+        }
+
+        .button2 {
+            position: absolute;
+            top: 380px;
+            left: 95px;
+        }
+
+        #id3 {
+            background-color: rgb(228, 228, 228);
+            border: 2px solid black;
+            border-radius: 18px;
+            border-color: rgb(228, 228, 228);
+            color: black;
+            text-decoration: none;
+            padding: 10px;
+
+        }
+
+        #id3:hover {
+            cursor: pointer;
+            background-color: rgba(228, 228, 228, 0.468);
+        }
+
+        #id2:hover {
+            cursor: pointer;
+            background-color: rgba(228, 228, 228, 0.468);
+        }
+
+        #id1:hover {
+            cursor: pointer;
+            background-color: rgba(228, 228, 228, 0.468);
+        }
+    </style>
 </head>
-<style>
-
-    * {
-        padding: 0;
-        margin: 0;
-    }
-
-    nav {
-        height: 60px;
-        width: 100%;
-        background-color: darkslategrey;
-        position: fixed;
-    }
-
-    ul {
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    ul li {
-        padding: 20px;
-        list-style-type: none;
-    }
-
-    ul a {
-        color: aliceblue;
-        text-decoration: none;
-        font-size: 17px;
-    }
-
-    .cont {
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    .box1 {
-        height: 300px;
-        width: 300px;
-        background-color: cadetblue;
-        margin: 100px;
-    }
-
-    .cont2 {
-        display: flex;
-        justify-content: space-around;
-        border: 2px solid black;
-
-    }
-
-    .box3 {
-        height: 200px;
-        width: 800px;
-        background-color: cadetblue;
-        margin: 0px 200px 40px 200px;
-    }
-
-    footer {
-        height: 20px;
-        width: 100%;
-        background-color: darkslategrey;
-        color: white;
-        text-align: center;
-        padding: 20px 0px;
-    }
-
-    .box4 {
-        height: 50px;
-        width: 50px;
-        border: 2px solid black;
-        border-radius: 50px;
-        background-color: burlywood;
-        position: fixed;
-        margin: 20px 1125px;
-        background-image: url(https://th.bing.com/th/id/OIP.rvSWtRd_oPRTwDoTCmkP5gHaE8?w=240&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7);
-        background-size: cover;
-        
-    }
-</style>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="#">home</a></li>
-            <li><a href="#">shop</a></li>
-            <li><a href="#">about</a></li>
-            <li><a href="#">contact us</a></li>
-        </ul>
-    </nav>
-    <div class="cont">
-        <div class="box1"></div>
-        <div class="box1"></div>
+    <div class="main">
+        <div class="sub">
+            <div class="sub2">
+                <img src="https://th.bing.com/th/id/OIP.f7Hfk_qKrw0cgfFGc2A5-wAAAA?w=267&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7"
+                    alt="PORSCHE">
+                <div class="button">
+                    <a id="id1" href="#">cars</a>
+                    <a id="id2" href="#">legacy</a>
+                </div>
+                <div class="head">
+                    <h1>Porsche 911</h1>
+                </div>
+                <div class="para">
+                    <p>The original Porsche 911 (pronounced nine eleven, German: Neunelfer) is a luxury sports car made
+                        by Porsche AG of Stuttgart, Germany. A prototype of the famous, distinctive, and durable design
+                        was shown to the public in autumn 1963......</p>
+                </div>
+                <div class="button2">
+                    <a id="id3" href="https://en.wikipedia.org/wiki/Porsche_911_(classic)">Read more</a>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div class="logo">
-        <div class="box4"></div>
-    </div>
-
-    <div class="cont1">
-        <div class="box3"></div>
-    </div>
-
 </body>
-<footer>
-     all rights are reserved @2024
-</footer>
 
 </html>
